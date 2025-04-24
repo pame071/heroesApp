@@ -1,11 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-:root{
-  --mat-toolbar-container-background-color: #abc7ff;
-  --mat-toolbar-container-text-color: #005cbb;
+@use '@angular/material' as mat;
+
+// Personalizar la aplicación completa
+:root {
+  @include mat.toolbar-overrides((
+    container-background-color: #abc7ff,
+    container-text-color: #005cbb,
+  ));
 }
-/* *[color="primary"]{
-  background-color: #4CAF50;
-} */
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
