@@ -40,6 +40,7 @@ export class NewPageComponent implements OnInit {
   ){}
 
 
+  // Getters:
   get currentHero(): Hero{
     const hero = this.heroForms.value as Hero;
     return hero;
